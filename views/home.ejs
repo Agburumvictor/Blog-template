@@ -1,0 +1,30 @@
+
+    <header>
+        <%- include('./partials/header'); -%>
+ </header>
+
+
+<div class="container" style="margin-top: 100px;">   
+    <p> <%= postTime %> </p>
+</div>
+
+
+
+<% fullPosts.forEach(function(full) { %>
+  <h2 class="container"> <%= full.title %> </h2> 
+  <p class="container"> <%= full.content %> </p> 
+  <%  }); %>
+
+
+
+
+ <footer>
+    <%- include('./partials/footer'); -%>
+</footer>
+    
+
+
+
+
+   
+
