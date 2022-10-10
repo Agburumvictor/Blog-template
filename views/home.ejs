@@ -12,7 +12,11 @@
 
 <% fullPosts.forEach(function(full) { %>
   <h2 class="container"> <%= full.title %> </h2> 
-  <p class="container"> <%= full.content %> </p> 
+  <div class="container">
+    <p> <%= full.content.substring(0, 100) + "..."%>
+        <a href="/categories/<%=full.title%>">read more</a> 
+    </p>
+  </div>
   <%  }); %>
 
 
